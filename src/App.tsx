@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Values from "values.js";
+import FormColor from "./components/FormColor";
 
 import "./App.css";
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <h2>test component</h2>
+      <FormColor></FormColor>
     </div>
   );
 }
