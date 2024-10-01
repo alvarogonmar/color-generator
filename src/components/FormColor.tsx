@@ -11,7 +11,7 @@ const FormColor: React.FC<FormColorProps> = ({ setList }) => {
   const handleGenerator = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      let colors = new Values(color).all(10);
+      let colors = new Values(color).all(5);
       setList(colors);
       setError(false);
     } catch (error) {
