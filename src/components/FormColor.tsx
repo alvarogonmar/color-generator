@@ -37,20 +37,22 @@ const FormColor: React.FC<FormColorProps> = ({ setList }) => {
 
       <footer>
         <p>Connect with me:</p>
-        <a
-          href="https://github.com/alvarogonmar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/%C3%A1lvaro-gonz%C3%A1lez-40ba12320/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
+        <h2 className="links">
+          <a
+            href="https://github.com/alvarogonmar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/%C3%A1lvaro-gonz%C3%A1lez-40ba12320/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </h2>
       </footer>
     </div>
   );
