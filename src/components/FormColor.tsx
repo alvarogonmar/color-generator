@@ -11,7 +11,7 @@ const FormColor: React.FC<FormColorProps> = ({ setList }) => {
   const handleGenerator = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      let colors = new Values(color).all(10);
+      let colors = new Values(color).all(5);
       setList(colors);
       setError(false);
     } catch (error) {
@@ -24,6 +24,7 @@ const FormColor: React.FC<FormColorProps> = ({ setList }) => {
   return (
     <div className="form-color">
       <h1>Color Palete Generator</h1>
+      <h2>By Alvaro Gonzalez</h2>
       <form onSubmit={handleGenerator}>
         <input
           type="text"
@@ -32,7 +33,7 @@ const FormColor: React.FC<FormColorProps> = ({ setList }) => {
         />
         <input type="submit" value="Generate" />
       </form>
-      {error ? <p className="error">Doesn't exist that color...</p> : null}
+      {error ? <p className="error">That color doesn't exist</p> : null}
     </div>
   );
 };
