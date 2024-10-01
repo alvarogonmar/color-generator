@@ -24,7 +24,7 @@ const FormColor: React.FC<FormColorProps> = ({ setList }) => {
   return (
     <div className="form-color">
       <div className="design-container">
-        <h1>Color Palete Generator</h1>
+        <h1>Color Palette Generator</h1>
         <h2>By Alvaro Gonzalez</h2>
         <form onSubmit={handleGenerator}>
           <input
