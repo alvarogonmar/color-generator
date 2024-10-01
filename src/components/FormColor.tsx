@@ -34,6 +34,24 @@ const FormColor: React.FC<FormColorProps> = ({ setList }) => {
         <input type="submit" value="Generate" />
       </form>
       {error ? <p className="error">That color doesn't exist</p> : null}
+
+      <footer>
+        <p>Connect with me:</p>
+        <a
+          href="https://github.com/alvarogonmar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/%C3%A1lvaro-gonz%C3%A1lez-40ba12320/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </footer>
     </div>
   );
 };

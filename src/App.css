@@ -123,3 +123,30 @@ p.author a {
     font-weight: 700;
     color: #000;
 }
+
+h1 {
+    font-size: 4rem;
+    color: #6a0dad;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: #fff;
+    background: linear-gradient(180deg, #e0f7fa, #e6e1f7);
+    padding: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 5px; /* Ajusta este valor según lo que necesites */
+
+  }
+   
