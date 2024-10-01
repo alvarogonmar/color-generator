@@ -23,37 +23,56 @@ const FormColor: React.FC<FormColorProps> = ({ setList }) => {
 
   return (
     <div className="form-color">
-      <h1>Color Palete Generator</h1>
-      <h2>By Alvaro Gonzalez</h2>
-      <form onSubmit={handleGenerator}>
-        <input
-          type="text"
-          placeholder="#fff"
-          onChange={(e) => setColor(e.target.value)}
-        />
-        <input type="submit" value="Generate" />
-      </form>
-      {error ? <p className="error">That color doesn't exist</p> : null}
+      <div className="design-container">
+        <h1>Color Palete Generator</h1>
+        <h2>By Alvaro Gonzalez</h2>
+        <form onSubmit={handleGenerator}>
+          <input
+            type="text"
+            placeholder="#fff"
+            onChange={(e) => setColor(e.target.value)}
+          />
+          <input type="submit" value="Generate" />
+        </form>
+        {error ? <p className="error">That color doesn't exist</p> : null}
 
-      <footer>
-        <p>Connect with me:</p>
-        <h2 className="links">
-          <a
-            href="https://github.com/alvarogonmar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/%C3%A1lvaro-gonz%C3%A1lez-40ba12320/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </h2>
-      </footer>
+        <footer>
+          <h2>Connect with me:</h2>
+          <div className="social-icons">
+            <a
+              href="https://github.com/alvarogonmar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/25231.png" alt="GitHub" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/%C3%A1lvaro-gonz%C3%A1lez-40ba12320/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/linkedin_logo.png" alt="LinkedIn" />
+            </a>
+          </div>
+          <h2 className="links">
+            <a
+              href="https://github.com/alvarogonmar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <span> | </span>
+            <a
+              href="https://www.linkedin.com/in/%C3%A1lvaro-gonz%C3%A1lez-40ba12320/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </h2>
+        </footer>
+      </div>
     </div>
   );
 };
