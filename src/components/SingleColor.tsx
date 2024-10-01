@@ -11,6 +11,9 @@ const SingleColor: React.FC<SingleColorProps> = ({ hexColor }) => {
     const colorNew = `#${color}`;
     navigator.clipboard.writeText(colorNew);
     setCopy(true);
+    setTimeout(() => {
+      setCopy(false);
+    }, 2000);
   };
 
   return (
