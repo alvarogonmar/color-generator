@@ -7,7 +7,7 @@ interface SingleColorProps {
 const SingleColor: React.FC<SingleColorProps> = ({ hexColor }) => {
   const [copy, setCopy] = useState(false);
 
-  const handleCopy = (color) => () => {
+  const handleCopy = (color: string) => () => {
     const colorNew = `#${color}`;
     navigator.clipboard.writeText(colorNew);
     setCopy(true);
